@@ -5,9 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz-app</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        form{
+    display: grid;
+    border-style: groove;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    background-color: lightblue;
+    margin-left: 60px;
+    border-radius: 20px;
+    
+}
+body{
+background-color: lemonchiffon;
+padding: 30px;
+}
+.title{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 30px;
+    font-size: larger;
+    font-style: oblique;
+}
+#results{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    margin-left: 50px;
+    border-radius: 30px;
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+}
+.instruction{
+    font-size: xx-large;
+    font-style: italic;
+}
+    </style>
 </head>
 <body>
-    <h1>Oyoo End Year Technology Exam</h1>
+    <div class="title">
+        <h1>Oyoo End Year Technology Exam</h1>
+    </div>
+    <div class="instruction">
+           <p>Answer all questions.</p>
+    </div>
+    <section>
+        <form  name="exam" >
+            <h3>Q1. What is HTML in full?</h3>
+                <input type="radio" name="question1" value="Hypertext Markup Language" id="A">
+                <label for="A">Hypertext Markup Language</label><br>
+     
+                <input type="radio" name="question1" value="Hypertext Markup Laguage" id="B">
+                <label for="B">Hypertext Markup Laguage</label><br>
+     
+                <input type="radio" name="question1" value="Hypertree Markup Language" id="C">
+                <label for="C">Hypertree Markup Language</label><br>
+           
+            <h3>Q2. What is CSS in full?</h3>
+                <input type="radio" name="question2" value="Cascading Style Sheet" id="A">
+                <label for="A">Cascading Style Sheet</label><br>
+     
+                <input type="radio" name="question2" value="Canvas Style sheet" id="B">
+                <label for="B">Canvas Style sheet</label><br>
+     
+                <input type="radio" name="question2" value="Carmel Casing Sheet" id="C">
+                <label for="C">Carmel Casing Sheet</label><br> 
+     
+           <h3>Q3. Which one is not an HTML tag</h3>
+                <input type="radio" name="question3" value="h1-tag" id="A">
+                <label for="A">h-tag</label><br>
+     
+                <input type="radio" name="question3" value="p-tag" id="B">
+                <label for="B">p-tag</label><br>
+     
+                <input type="radio" name="question3" value="s-tag" id="C">
+                <label for="C">s-tag</label><br>
+     
+           <h3>Q4. Which of the following is not a front end language?</h3>
+                <input type="radio" name="question4" value="c++" id="A">
+                <label for="A">c++</label><br>
+     
+                <input type="radio" name="question4" value="javascript" id="B">
+                <label for="B">javascript</label><br>
+     
+                <input type="radio" name="question4" value="HTML" id="C">
+                <label for="C">HTML</label><br>
+     
+           <h3>Q5. What is the main role of javascript in web development?</h3>
+                <input type="radio" name="question5" value="Creates functionality" id="A">
+                <label for="A">Creates functionality</label><br>
+     
+                <input type="radio" name="question5" value="Styling" id="B">
+                <label for="B">Styling</label><br>
+     
+                <input type="radio" name="question5" value="Structuring the page" id="C">
+                <label for="C">Structuring the page</label><br>    
+         
+             <div class="submit">
+                 <button type="submit" onClick="results()">RESULT</button>
+     
+             </div>
+             
+     
+             
+             
+        
+        </form>
+        <div id="results">
+            
+        </div>
+     
+    </section>
 </body>
 </html>

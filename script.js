@@ -26,17 +26,32 @@ function results() {
     if (question5= "Creates functionality") {
         marks++;
     }
-    document.write(marks*19.66);
+
     let score=marks*19.66;
+    
+    //document.getElementById("results");
+    document.write(score);
+    
+
     if (score>=90) {
         document.write("  GRADE : A  EXECELLENT");
+        //document.getElementById("results");
     } else if (score>=80) {
-        document.write("  GRADE : B  GOOD WORK");
+        document.write("  GRADE : A-  GOOD WORK");
+        //document.getElementById("results");
+    }else if(score>=70)
+    {
+       document.write("  GRADE : B+ SATISFACTORY"); 
+       //document.getElementById("results");
     }else if(score>=65)
     {
-       document.write("  GRADE : C FAIR"); 
-    }else
-    {
-        document.write("  Retake the test.");
+        document.write(" GRADE : B  FAIR TRIAL, AIM HIGHER.");
+        //document.getElementById("results");
+    }else if(score>=60){ 
+        document.write(" GRADE C+ AVERAGELY WELL, IMPROVE")
+    }else if (score>=50) {
+         document.write("GRADE C : AVERAGE")
+    }else{
+        document.write("FAIL : RETAKE THE EXAM")
     }
 }
